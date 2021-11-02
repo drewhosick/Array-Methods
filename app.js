@@ -75,3 +75,10 @@ console.log(adults);
 const numero = 1;
 const names = ['jeff', 'carter', 'leanne'];
 console.log(Array.isArray(names), Array.isArray(numero));
+
+// Array.from and new Set removing duplicates
+const numbers1 = [3, 4, 6, 2, 7, 3, 4, 1, 2, 3, 4, 5];
+
+const res = Array.from(new Set(numbers1));
+console.log(res);
+
